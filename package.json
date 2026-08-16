@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest"
@@ -21,6 +23,7 @@
     "@types/react": "latest",
     "@types/react-dom": "latest",
     "@vitejs/plugin-react": "latest",
+    "gh-pages": "^6.3.0",
     "jsdom": "latest",
     "tailwindcss": "latest",
     "typescript": "latest",
